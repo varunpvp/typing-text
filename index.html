@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Typing Text with JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="typing-text" ></h1>
+    <script src="typing.min.js"></script>
+    <script>
+        // get the element
+        const text = document.querySelector('.typing-text');
+
+        // make a string array
+        const words = [
+            "eat.",
+            "sleep.",
+            "code.",
+            "repeat.",
+        ];
+
+        // start typing effect
+        setTyper(text, words);
+    </script>
+</body>
+</html>

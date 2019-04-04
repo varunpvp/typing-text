@@ -1,0 +1,50 @@
+html,
+body {
+	margin: 0;
+}
+
+body {
+	font-family: sans-serif;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	min-height: 100vh;
+	background-color: #000;
+	color: #fff;
+}
+
+h1 {
+	margin: 0;
+}
+
+.typing-text::after {
+	content: "|";
+	-webkit-animation: blink ease 1s infinite;
+	        animation: blink ease 1s infinite;
+}
+
+@-webkit-keyframes blink {
+	0%,
+	100% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+}
+
+@keyframes blink {
+	0%,
+	100% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+}
